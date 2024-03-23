@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(138, 182, 138);
+}
+#panel{
+    overflow: hidden;
+    width: 80%;
+    height: 80%;
+    background-color: #fff;
+    border-radius: 10px;
+}
+#ptop{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0px 15%;
+    width: 100%;
+    height: 100px;
+    background-color: rgb(74, 135, 74);
+}
+.elem{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.elem>h2{
+    font-weight: 600;
+    color: rgb(179, 230, 179);
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-weight: 700;
+    color: rgb(74, 135, 74);
+    padding: 10px 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    opacity: .9;
+}
+
+#pbtm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 10px;
+    width: 100%;
+    height: calc(100% - 100px);
+    z-index: 10;
+}
+.bubble{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    color: #fff;
+    background-color: rgb(84, 146, 84);
+    border-radius: 50%;
+    font-size: 15px;
+    font-weight: 500;
+}
+.bubble:hover{
+    cursor: pointer;
+    background-color: rgb(45, 87, 45);
+    transition: .2s;
+}
+
+#startButton{
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 18%;
+    height: 10%;
+    border-radius: 12px;
+    text-transform: uppercase;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(138, 182, 138);
+    cursor: pointer;
+}
+@media only screen and (max-width: 760px) {
+    #pbtm {
+        content: "Game is not supported for these window";
+    }
+}
